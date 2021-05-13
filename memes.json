@@ -1,1 +1,38 @@
-{"memes":[{"texts":[{"size":32,"color":"WHITE","alignmentX":"HORIZONTAL_ALIGN_CENTER","alignmentY":"VERTICAL_ALIGN_BOTTOM","content":"This is an example"}],"id":1620891234629,"originalImage":"1620891233903-avatar.png","originalImagePath":"public/images/1620891233903-avatar.png","outputMemePath":"public/images/MEME_1620891234629.png","createdAt":1620891235167,"updatedAt":1620891235167},{"texts":[{"size":32,"color":"WHITE","alignmentX":"HORIZONTAL_ALIGN_CENTER","alignmentY":"VERTICAL_ALIGN_BOTTOM","content":"This is an example"}],"id":1620890065548,"originalImage":"1620890038401-alex-tXYg4Zx7kSU-unsplash.jpg","originalImagePath":"public/images/1620890038401-alex-tXYg4Zx7kSU-unsplash.jpg","outputMemePath":"public/images/MEME_1620890065548.jpg","createdAt":1620890067465,"updatedAt":1620890067469}]}
+{
+  "memes": [
+    {
+      "texts": [
+        {
+          "size": 32,
+          "color": "WHITE",
+          "alignmentX": "HORIZONTAL_ALIGN_CENTER",
+          "alignmentY": "VERTICAL_ALIGN_BOTTOM",
+          "content": "This is an example"
+        }
+      ],
+      "id": 1620891234629,
+      "originalImage": "1620891233903-avatar.png",
+      "originalImagePath": "public/images/1620891233903-avatar.png",
+      "outputMemePath": "public/images/MEME_1620891234629.png",
+      "createdAt": 1620891235167,
+      "updatedAt": 1620891235167
+    },
+    {
+      "texts": [
+        {
+          "size": 32,
+          "color": "WHITE",
+          "alignmentX": "HORIZONTAL_ALIGN_CENTER",
+          "alignmentY": "VERTICAL_ALIGN_BOTTOM",
+          "content": "This is an example"
+        }
+      ],
+      "id": 1620890065548,
+      "originalImage": "1620890038401-alex-tXYg4Zx7kSU-unsplash.jpg",
+      "originalImagePath": "public/images/1620890038401-alex-tXYg4Zx7kSU-unsplash.jpg",
+      "outputMemePath": "public/images/MEME_1620890065548.jpg",
+      "createdAt": 1620890067465,
+      "updatedAt": 1620890067469
+    }
+  ]
+}

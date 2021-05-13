@@ -54,7 +54,21 @@ const getMemes = (req, res, next) => {
     const offset = perPage * (page - 1);
     memes = memes.slice(offset, offset + perPage);
 
-    res.json({ memes, totalPages });
+    res.json({ success: true, data: { memes, totalPages } });
+  } catch (err) {
+    next(err);
+  }
+};
+
+const getMemeById = (req, res, next) => {
+  try {
+    // Read data from the json file
+    let rawData = fs.readFileSync('memes.json');
+    let memes = JSON.parse(rawData).memes;
+    let { memeId } = req.params;
+    const meme = memes.find((meme) => meme.id === parseInt(memeId));
+    if (!meme) throw Error;
+    res.json(meme);
   } catch (err) {
     next(err);
   }
@@ -63,4 +77,5 @@ const getMemes = (req, res, next) => {
 module.exports = {
   createMeme,
   getMemes,
+  getMemeById,
 };

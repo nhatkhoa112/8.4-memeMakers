@@ -3,7 +3,11 @@ const router = express.Router();
 const fs = require('fs');
 const { upload } = require('../middlewares/upload.helper');
 const { resize } = require('../middlewares/photo.helper');
-const { createMeme, getMemes } = require('../controllers/memes.controller');
+const {
+  createMeme,
+  getMemes,
+  getMemeById,
+} = require('../controllers/memes.controller');
 
 // let memesData;
 
@@ -32,6 +36,9 @@ router.get('/', getMemes, function (req, res, next) {
   res.json({ status: 200, message: 'ok' });
 });
 
+router.get('/:memeId', getMemeById, function (req, res, next) {
+  res.json({ status: 200, message: 'ok' });
+});
 // // GET individual meme by ID
 // router.get('/:memeId', function (req, res) {
 //   try {
@@ -59,7 +66,6 @@ router.post(
   createMeme,
   (req, res, next) => {
     try {
-      if (!req.body.image) throw Error;
       console.log(req.file);
       res.json({ status: 'ok' });
     } catch (error) {
